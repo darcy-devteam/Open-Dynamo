@@ -1,0 +1,8 @@
+Open-Dynamo
+Copyright 2026 The Open-Dynamo authors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The web app is built with React and React Flow (@xyflow/react), both MIT licensed.
+Model kernels are compiled with the Zig toolchain (MIT licensed), installed from the
+`ziglang` package.

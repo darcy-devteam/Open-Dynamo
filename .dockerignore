@@ -1,0 +1,8 @@
+.git
+.venv
+**/__pycache__
+**/node_modules
+src/opendynamo/static
+tests
+docs
+.pytest_cache

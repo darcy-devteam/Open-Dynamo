@@ -1,0 +1,28 @@
+[project]
+name = "opendynamo"
+version = "0.1.0"
+description = "Open-Dynamo: draw, simulate and analyse dynamical systems in the browser, with compute offloaded to a small server"
+readme = "README.md"
+license = "Apache-2.0"
+authors = [{ name = "The Open-Dynamo authors" }]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "numpy>=2.0",
+    "pydantic>=2.8",
+    "uvicorn>=0.30",
+    "ziglang>=0.13",
+]
+
+[project.scripts]
+opendynamo = "opendynamo.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=8.0",
+]
